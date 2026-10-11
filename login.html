@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login | VELOOP Rewards</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <main class="auth-layout">
+
+    <!-- Left Side: Branding -->
+    <section class="auth-visual">
+
+      <a class="brand" href="index.html">
+        <span class="brand-mark">V</span> VELOOP.
+      </a>
+
+      <div>
+        <div class="eyebrow">Rewards start here</div>
+
+        <h1>
+          Earn More.<br>
+          <span class="tagline">Engage More.</span><br>
+          Get Rewarded.
+        </h1>
+
+        <p>
+          One place to manage Gems, exchange for VEs,
+          and explore rewards.
+        </p>
+
+        <div class="auth-art">
+          <img src="assets/svg/gem(4).svg" alt="VELOOP Gems">
+          <img src="assets/svg/ve(4).svg" alt="VELOOP VEs">
+        </div>
+      </div>
+
+      <div class="auth-stats">
+        <div>
+          <strong>Gems</strong>
+          <span class="small muted">Earn</span>
+        </div>
+
+        <div>
+          <strong>VEs</strong>
+          <span class="small muted">Exchange</span>
+        </div>
+
+        <div>
+          <strong>Rewards</strong>
+          <span class="small muted">Explore</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Side: Login Form -->
+    <section class="auth-form-side">
+      <div class="auth-card">
+
+        <a class="brand" href="index.html">
+          <span class="brand-mark">V</span> VELOOP.
+        </a>
+
+        <div class="eyebrow">Welcome back</div>
+
+        <h1>Sign in to your account</h1>
+        <p>Continue your rewards journey.</p>
+
+        <form id="login-form" novalidate>
+
+          <!-- Login notice -->
+          <div
+            class="notice"
+            id="login-notice"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <!-- Username or Email -->
+          <div class="field">
+            <label for="identity">Username or email</label>
+
+            <input
+              id="identity"
+              name="identity"
+              type="text"
+              autocomplete="username"
+              required
+              placeholder="Enter username or email"
+            >
+          </div>
+
+          <!-- Password -->
+          <div class="field">
+            <label for="password">Password</label>
+
+            <div class="inline-form">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                placeholder="Enter your password"
+              >
+
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-toggle-password="password"
+                aria-label="Show password"
+                aria-controls="password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+          </div>
+
+          <!-- Remember Me and Forgot Password -->
+          <div
+            class="small"
+            style="display:flex;justify-content:space-between;gap:12px;margin:4px 0 22px"
+          >
+            <label class="check-row">
+              <input type="checkbox" name="remember">
+              Remember me
+            </label>
+
+            <a class="muted-link" href="forgot-password.html">
+              Forgot password?
+            </a>
+          </div>
+
+          <!-- Login Button -->
+          <button
+            class="btn btn-primary btn-block"
+            id="login-button"
+            type="submit"
+          >
+            Login to VELOOP
+          </button>
+
+        </form>
+
+        <!-- Register Link -->
+        <p style="margin-top:24px;text-align:center">
+          New to VELOOP?
+          <a class="muted-link" href="register.html">
+            Create an account
+          </a>
+        </p>
+
+        <div class="auth-foot">
+          By continuing, you agree to use this demo platform responsibly.
+          <br>
+          <a class="muted-link" href="index.html">Back to home</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Load API helpers before authentication code -->
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+
+</body>
+</html>
