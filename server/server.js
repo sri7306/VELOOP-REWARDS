@@ -7,8 +7,8 @@ const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
 const { db, seed } = require('./src/database');
-
 const app = express();
+app.set('trust proxy', 1);
 const SQLiteStore = SQLiteStoreFactory(session);
 const port = Number(process.env.PORT || 3000);
 const dbDir = path.join(__dirname, '..', 'database');
